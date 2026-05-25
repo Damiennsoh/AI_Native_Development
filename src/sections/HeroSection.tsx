@@ -2,6 +2,8 @@ import { useEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 import { Users, Globe, CreditCard } from 'lucide-react'
 
+const checkoutLink = 'https://selar.com/z21175n859'
+
 export default function HeroSection() {
   const sectionRef = useRef<HTMLDivElement>(null)
   const headlineRef = useRef<HTMLDivElement>(null)
@@ -107,12 +109,10 @@ export default function HeroSection() {
 
           <div ref={ctaRef} className="flex flex-wrap gap-4 mb-10">
             <a
-              href="#enroll"
+              href={checkoutLink}
+              target="_blank"
+              rel="noopener noreferrer"
               className="btn-primary"
-              onClick={(e) => {
-                e.preventDefault()
-                document.getElementById('enroll')?.scrollIntoView({ behavior: 'smooth' })
-              }}
             >
               Enroll Now — Early Bird 30% Off
             </a>

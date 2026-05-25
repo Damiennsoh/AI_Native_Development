@@ -5,6 +5,8 @@ import { AlertTriangle } from 'lucide-react'
 
 gsap.registerPlugin(ScrollTrigger)
 
+const checkoutLink = 'https://selar.com/z21175n859'
+
 export default function FinalCTASection() {
   const sectionRef = useRef<HTMLDivElement>(null)
 
@@ -53,9 +55,14 @@ export default function FinalCTASection() {
               Only 30 spots available. Early Bird pricing ends soon. Program starts shortly after.
             </p>
           </div>
-          <button className="sm:ml-auto btn-primary whitespace-nowrap text-xs">
+          <a
+            href={checkoutLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="sm:ml-auto btn-primary whitespace-nowrap text-xs"
+          >
             Secure Your Spot Now
-          </button>
+          </a>
         </div>
       </div>
 
@@ -70,9 +77,14 @@ export default function FinalCTASection() {
         </p>
 
         <div className="animate-in flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
-          <button className="btn-primary text-base px-10 py-5">
+          <a
+            href={checkoutLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-primary text-base px-10 py-5"
+          >
             Enroll Now — Early Bird Ends Soon
-          </button>
+          </a>
         </div>
 
         <div className="animate-in text-sm text-zinc-500 space-y-2">

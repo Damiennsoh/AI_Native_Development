@@ -5,6 +5,8 @@ import { Check, Star, Zap, Building2, CreditCard, Smartphone, Banknote, Coins } 
 
 gsap.registerPlugin(ScrollTrigger)
 
+const checkoutLink = 'https://selar.com/z21175n859'
+
 const plans = [
   {
     name: 'Lite',
@@ -168,15 +170,18 @@ export default function PricingSection() {
                   ))}
                 </ul>
 
-                <button
-                  className={`w-full py-3.5 rounded-xl font-semibold text-sm transition-all duration-200 ${
+                <a
+                  href={checkoutLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`inline-flex items-center justify-center w-full py-3.5 rounded-xl font-semibold text-sm transition-all duration-200 ${
                     plan.popular
                       ? 'bg-[#00FF94] text-black hover:bg-[#00FF94]/90 hover:shadow-lg hover:shadow-[#00FF94]/20'
                       : 'bg-white/5 text-white border border-white/10 hover:border-[#00FF94]/30 hover:bg-white/[0.04]'
                   }`}
                 >
                   {plan.cta}
-                </button>
+                </a>
               </div>
             )
           })}
