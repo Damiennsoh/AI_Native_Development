@@ -31,7 +31,10 @@ export default function Navigation() {
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           className="font-heading font-bold text-lg text-white tracking-tight hover:text-[#00FF94] transition-colors"
         >
-          AI-Native Accelerator
+          <div className="flex flex-col">
+            <span className="text-xs text-zinc-400">by PsyCatech-Solutions</span>
+            <span>AI-Native Accelerator</span>
+          </div>
         </button>
 
         <div className="hidden md:flex items-center gap-8">
