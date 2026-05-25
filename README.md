@@ -1,10 +1,10 @@
-# AI Native Development
+# PsyCatech-Solutions: AI-Native Development Accelerator
 
 A responsive AI-powered landing page built with React, TypeScript, Vite, Tailwind CSS, and modern UI components.
 
 ## Overview
 
-This repository contains a polished front-end landing page experience for AI-native development services, with reusable sections, navigation, and a 3D background integration.
+This repository contains a polished front-end landing page for PsyCatech-Solutions' AI-Native Developer Accelerator program. It features reusable sections, smooth navigation, and immersive 3D background integration. The program is a 12-week intensive course designed to teach modern developers how to build desktop, web, and mobile applications using AI tools like Cursor, v0, Supabase, and Vercel.
 
 ## Project structure
 
@@ -50,6 +50,12 @@ The production-ready files are generated in the default Vite output directory.
 ## Notes
 
 The repository has been reorganized so the Vite application now lives at the repository root. This makes project setup, scripts, and configuration easier to work with.
+
+## Contact
+
+For inquiries about the AI-Native Developer Accelerator program:
+- **WhatsApp**: +233544282060
+- **Location**: Accra, Ghana
 
 ## License
 
