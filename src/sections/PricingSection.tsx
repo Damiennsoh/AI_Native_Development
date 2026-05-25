@@ -22,10 +22,10 @@ const plans = [
     name: 'Pro',
     price: '₵2,500',
     original: '₵3,570',
-    description: 'Everything in Lite plus live cohort sessions and project reviews.',
+    description: 'Everything in Lite plus live cohort sessions on Zoom, MS Teams, or Google Meet and project reviews.',
     features: [
       'Everything in Lite',
-      'Live cohort sessions',
+      'Live cohort sessions online',
       'Weekly code reviews',
       '1 project deep-dive feedback',
       'Demo Day participation',

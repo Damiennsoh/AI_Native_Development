@@ -133,7 +133,7 @@ export default function HeroSection() {
             </div>
             <div className="flex items-center gap-2 text-sm text-zinc-400">
               <Globe className="w-4 h-4 text-[#00FF94]" />
-              <span>Live sessions (Accra + Online)</span>
+              <span>Online sessions via Zoom, MS Teams, or Google Meet</span>
             </div>
             <div className="flex items-center gap-2 text-sm text-zinc-400">
               <CreditCard className="w-4 h-4 text-[#00FF94]" />

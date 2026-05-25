@@ -91,18 +91,18 @@ export default function FinalCTASection() {
           <p>
             Questions? WhatsApp me directly:{' '}
             <a
-              href="https://wa.me/233XXXXXXXXX"
+              href="https://wa.me/233544282060"
               className="text-[#00FF94] hover:underline"
               target="_blank"
               rel="noopener noreferrer"
             >
-              +233 XX XXX XXXX
+              +233544282060
             </a>
           </p>
           <p>
             Or email:{' '}
-            <a href="mailto:hello@ainative.dev" className="text-[#00FF94] hover:underline">
-              hello@ainative.dev
+            <a href="mailto:hello@psycatechsolution.dev" className="text-[#00FF94] hover:underline">
+              hello@psycatechsolution.dev
             </a>
           </p>
         </div>
