@@ -86,7 +86,7 @@ export default function HeroSection() {
         }}
       />
 
-      <div className="w-full max-w-7xl mx-auto px-6 lg:px-8 py-20 lg:py-0 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8 items-center">
+      <div className="w-full max-w-7xl mx-auto px-6 lg:px-8 pt-24 lg:pt-28 pb-20 lg:pb-0 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8 items-center">
         {/* Left: Text Content */}
         <div className="order-2 lg:order-1 relative" style={{ zIndex: 3 }}>
           <div ref={headlineRef} className="mb-8">
