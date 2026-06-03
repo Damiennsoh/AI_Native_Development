@@ -32,7 +32,7 @@ export default function Navigation() {
           className="font-heading font-bold text-lg text-white tracking-tight hover:text-[#00FF94] transition-colors"
         >
           <div className="flex flex-col">
-            <span className="text-xs text-zinc-400">by PsyCatech-Solutions</span>
+            <span className="text-xs text-zinc-400">by PsyCatech-Solutions Academy</span>
             <span>AI-Native Accelerator</span>
           </div>
         </button>

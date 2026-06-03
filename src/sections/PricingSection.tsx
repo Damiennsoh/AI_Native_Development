@@ -174,10 +174,10 @@ export default function PricingSection() {
                     <span className="text-sm text-zinc-500 line-through">{plan.original}</span>
                   </div>
                   <p className="mt-2 text-sm text-zinc-500">
-                    ≈ {formatUsd(Math.round(plan.amount * GHS_TO_USD * 100) / 100)} USD
+                    GHS → USD: ≈ {formatUsd(Math.round(plan.amount * GHS_TO_USD * 100) / 100)}
                   </p>
                   <p className="text-xs text-zinc-500">
-                    Original ≈ {formatUsd(Math.round(plan.originalAmount * GHS_TO_USD * 100) / 100)} USD
+                    Original (GHS → USD): ≈ {formatUsd(Math.round(plan.originalAmount * GHS_TO_USD * 100) / 100)}
                   </p>
                   <span className="text-xs text-[#00FF94] font-medium">Early Bird</span>
                 </div>

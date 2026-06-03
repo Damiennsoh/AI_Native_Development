@@ -8,7 +8,7 @@ export default function FooterSection() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-8">
           <div className="text-center md:text-left">
             <div className="font-heading font-bold text-lg text-white mb-1">
-              PsyCatech-Solutions
+              PsyCatech-Solutions Academy
             </div>
             <p className="text-sm text-zinc-500">AI-Native Accelerator • Built for modern learners.</p>
           </div>
@@ -42,7 +42,7 @@ export default function FooterSection() {
 
         <div className="mt-8 pt-8 border-t border-white/5 text-center">
           <p className="text-xs text-zinc-600">
-            © 2026 PsyCatech-Solutions. AI-Native Developer Accelerator. Built in Accra, Ghana.
+            © 2026 PsyCatech-Solutions Academy. AI-Native Developer Accelerator. Built in Accra, Ghana.
           </p>
         </div>
       </div>
