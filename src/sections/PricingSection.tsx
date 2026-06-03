@@ -6,12 +6,24 @@ import { Check, Star, Zap, Building2, CreditCard, Smartphone, Banknote, Coins } 
 gsap.registerPlugin(ScrollTrigger)
 
 const checkoutLink = 'https://selar.com/z21175n859'
+const GHS_TO_USD = 0.084861
+
+const formatUsd = (amount: number) =>
+  amount
+    .toLocaleString('en-US', {
+      style: 'currency',
+      currency: 'USD',
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 2,
+    })
 
 const plans = [
   {
     name: 'Lite',
     price: '₵800',
+    amount: 800,
     original: '₵1,150',
+    originalAmount: 1150,
     description: 'Self-paced video access with community support.',
     features: ['Self-paced video access', 'Community support', 'No live sessions'],
     cta: 'Get Lite Access',
@@ -21,7 +33,9 @@ const plans = [
   {
     name: 'Pro',
     price: '₵2,500',
+    amount: 2500,
     original: '₵3,570',
+    originalAmount: 3570,
     description: 'Everything in Lite plus live cohort sessions on Zoom, MS Teams, or Google Meet and project reviews.',
     features: [
       'Everything in Lite',
@@ -37,7 +51,9 @@ const plans = [
   {
     name: 'Premium',
     price: '₵5,000',
+    amount: 5000,
     original: '₵7,140',
+    originalAmount: 7140,
     description: 'Everything in Pro plus 1-on-1 mentorship and job referrals.',
     features: [
       'Everything in Pro',
@@ -55,6 +71,7 @@ const plans = [
 const teamPlan = {
   name: 'Team/Corporate',
   price: '₵15,000',
+  amount: 15000,
   description: 'Up to 5 team members with custom scheduling.',
   features: ['Up to 5 team members', 'Custom scheduling', 'Private group sessions'],
   cta: 'Contact Us',
@@ -156,6 +173,12 @@ export default function PricingSection() {
                     </span>
                     <span className="text-sm text-zinc-500 line-through">{plan.original}</span>
                   </div>
+                  <p className="mt-2 text-sm text-zinc-500">
+                    ≈ {formatUsd(Math.round(plan.amount * GHS_TO_USD * 100) / 100)} USD
+                  </p>
+                  <p className="text-xs text-zinc-500">
+                    Original ≈ {formatUsd(Math.round(plan.originalAmount * GHS_TO_USD * 100) / 100)} USD
+                  </p>
                   <span className="text-xs text-[#00FF94] font-medium">Early Bird</span>
                 </div>
 
@@ -199,8 +222,13 @@ export default function PricingSection() {
                 <p className="text-sm text-zinc-400">{teamPlan.description}</p>
               </div>
             </div>
-            <div className="flex items-center gap-6">
-              <span className="font-heading font-bold text-2xl text-white">{teamPlan.price}</span>
+            <div className="flex flex-col sm:flex-row sm:items-center sm:gap-6 gap-2">
+              <div>
+                <span className="font-heading font-bold text-2xl text-white">{teamPlan.price}</span>
+                <p className="text-sm text-zinc-500">
+                  ≈ {formatUsd(Math.round(teamPlan.amount * GHS_TO_USD * 100) / 100)} USD
+                </p>
+              </div>
               <button className="btn-secondary">{teamPlan.cta}</button>
             </div>
           </div>
